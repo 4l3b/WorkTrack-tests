@@ -23,13 +23,11 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install
 
-      - name: Clone latest WorkTrack app
-        run: git clone https://github.com/4l3b/WorkTrack.git app
-
       - name: Run Playwright tests
         run: npm test
-
+      
       - name: Upload Playwright report
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: playwright-report
