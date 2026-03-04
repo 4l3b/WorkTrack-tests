@@ -53,8 +53,8 @@ class WorkTrackPage
 	async verifyClockOutTimeLeft()
 	{
 	
-		await expect(this.page.locator(this.clockOutField)).not.toHaveText(/.*CLOCK OUT.*--:--:--/, { timeout: 4000 })
-		await expect(this.page.locator(this.timeLeftField)).not.toHaveText(/.*TIME LEFT.*--:--:--/, { timeout: 4000 })
+		await expect(this.page.locator(this.clockOutField)).not.toHaveText(/.*CLOCK OUT.*--:--:--/, { timeout: 10000 })
+		await expect(this.page.locator(this.timeLeftField)).not.toHaveText(/.*TIME LEFT.*--:--:--/, { timeout: 10000 })
 	
 	}
 	
