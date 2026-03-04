@@ -8,7 +8,9 @@ This repository is linked to the main WorkTrack app repository (`4l3b/WorkTrack`
 2. Tests run automatically on GitHub’s servers.
 3. An HTML report is generated automatically for each test run.
 
+
 **Test status:** 
+
 ![WorkTrack Tests](https://github.com/4l3b/WorkTrack-tests/actions/workflows/run-tests.yml/badge.svg)
 
 
