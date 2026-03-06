@@ -61,8 +61,10 @@ class WorkTrackPage
 	
 	async verifyClockOutTimeLeftBeforeSession()
 	{
+		
 		await expect(this.page.locator(this.clockOutField)).toHaveText(/.*CLOCK OUT.*--:--:--/)
 		await expect(this.page.locator(this.timeLeftField)).toHaveText(/.*TIME LEFT.*--:--:--/)
+		
 	}
 
 }
